@@ -19,13 +19,14 @@ This is my **personal portfolio website** built using **Flask** and styled with 
 - Certifications timeline
 - Education details
 - Contact section with form layout
+- Contact form integrated with **Flask-Mail** to receive emails directly
 
 ---
 
 ## 🛠️ **Tech Stack**
 
 - **Frontend:** HTML, CSS, Tailwind CSS CDN
-- **Backend:** Flask (Python)
+- **Backend:** Flask (Python), Flask-Mail
 - **Deployment:** Render
 
 ---
@@ -55,13 +56,22 @@ This is my **personal portfolio website** built using **Flask** and styled with 
     pip install -r requirements.txt
     ```
 
-4. **Run the app**
+4. **Set up environment variables**
+
+    Create a `.env` file (or set them directly) with your email credentials for Flask-Mail:
+
+    ```
+    MAIL_USERNAME=your_email@gmail.com
+    MAIL_PASSWORD=your_app_password
+    ```
+
+5. **Run the app**
 
     ```bash
     python app.py
     ```
 
-5. **Visit**
+6. **Visit**
 
     ```
     http://127.0.0.1:5000/
@@ -69,5 +79,22 @@ This is my **personal portfolio website** built using **Flask** and styled with 
 
 ---
 
+## ✉️ **Contact Form Email Integration**
 
+This project uses **Flask-Mail** to send form submissions to your email address securely.
 
+---
+
+## 💡 **Future Improvements**
+
+- Add database integration for storing contact messages
+- Dynamic projects section using backend data
+- Animations and interactive UI improvements
+
+---
+
+## 📄 **License**
+
+This project is open-source and free to use for learning and portfolio building.
+
+---
